@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles.css">
+    <title>HTML - Les 1</title>
+</head>
+<body>
+<h1>HTML - Les 1</h1>
+<hr />
+
+<!-------------------------------- Tekst opmaak: -------------------------------------->
+<h2>1.1 Tekst opmaak:</h2>
+<div>
+    <h3>Dit is een titel (heading 3)</h3>
+    <p>Dit is een paragraph</p>
+    <p>Dit is <i>italic</i> en dit is <em>emphasis</em></p>
+    <p>Dit is <b>bold</b> en dit is <strong>strong</strong></p>
+    <p>Dit is <u>onderstreept</u>
+</div>
+<hr />
+
+<!-------------------------------- Opsommingen: --------------------------------------->
+<h2>1.2 Opsommingen:</h2>
+<div>
+    <ul>
+        <li>Dit is een unordered list</li>
+        <li>Dit is een unordered list</li>
+        <li>Dit is een unordered list</li>
+    </ul>
+    <ol>
+        <li>Dit is een ordered list</li>
+        <li>Dit is een ordered list</li>
+        <li>Dit is een ordered list</li>
+    </ol>
+</div>
+<hr />
+
+<!-------------------------------- Linken: -------------------------------------------->
+<h2>1.3 Linken:</h2>
+<div>
+    <p>Dit is een <a href="../../index.html">link</a> naar de overzichtspagina</p>
+    <p>Dit is een <a href="https://www.novi.nl">link</a> naar een externe pagina</p>
+    <p>Dit is een <a href="https://www.novi.nl" target="_blank">link</a> naar een externe pagina die opent in een
+        nieuw tabblad</p>
+</div>
+<hr />
+
+<!-------------------------------- Afbeeldingen: -------------------------------------->
+<h2>1.4 Afbeeldingen:</h2>
+<div>
+    <p>Dit is een afbeelding van een externe bron:</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/WebStorm_Icon.png/1024px-WebStorm_Icon.png"
+         alt="Webstorm Logo"
+         width="50"/>
+    <p>Dit is een afbeelding van een interne bron:</p>
+    <img src="../../assets/images/intellij_logo.png"
+         alt="Webstorm Logo"
+         width="50px"/>
+</div>
+<hr />
+
+<!-------------------------------- Semantische lay-out: ------------------------------->
+<h2>1.5 Semantische lay-out:</h2>
+<div class="code">
+    <article>Dit is een 'article' tag</article>
+    <aside>Dit is een 'aside' tag</aside>
+    <header>Dit is een 'header' tag</header>
+    <footer>Dit is een 'footer' tag</footer>
+    <main>Dit is de 'main' tag</main>
+    <nav>Dit is de 'nav' tag</nav>
+    <section>Dit is de 'section' tag</section>
+</div>
+<hr />
+
+<!-------------------------------- Overige semantische elementen: --------------------->
+<h2>1.6 Overige semantische elementen:</h2>
+<div>
+    <figure>
+        <img src="../../assets/images/intellij_logo.png"
+             alt="Webstorm Logo"
+             width="50px"/>
+        <figcaption>
+            Dit is figcaption die omschrijft wat de figure aan content bevat
+        </figcaption>
+    </figure>
+    <details>
+        <summary>Dit is een samenvatting tag en is uitklapbaar</summary>
+        Hier komt de content die de details van de samenvatting bevat
+    </details>
+    <fieldset>
+        Dit is de fieldset tag
+        <legend>Dit is de legend tag die bij de fieldset hoort</legend>
+    </fieldset>
+    <mark>Dit is een opmerking en wordt standard voorzien van een highlight</mark>
+    <p>Dit is een time tag
+        <time>12:00</time>
+    </p>
+</div>
+<hr />
+
+<!-------------------------------- Tabellen: ------------------------------------------>
+<h2>1.7 Tabellen:</h2>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Maand</th>
+            <th>Bedrag</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>januari</td>
+            <td>€100</td>
+        </tr>
+        <tr>
+            <td>februari</td>
+            <td>€80</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>totaal</td>
+            <td>€180</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<hr />
+
+<!-------------------------------- Button: -------------------------------------------->
+<h2>1.8 Button:</h2>
+<div>
+    <button type="button">Button</button>
+</div>
+
+<!-------------------------------- Formulieren: --------------------------------------->
+<h2>1.9 Formulieren:</h2>
+<div>
+    <form id="form">
+        <label for="tekst-field">
+            Text input:
+            <input type="text" id="tekst-field" name="text-input" value="Elwyn"/>
+        </label>
+        <br/>
+        <!-- with placeholder text -->
+        <label for="email-field">
+            Email input:
+            <input type="email" id="email-field" name="email-input" placeholder="voer uw email in"/>
+        </label>
+        <br/>
+        <!-- with min & max length password -->
+        <label for="password-field">
+            Password input:
+            <input type="password" id="password-field" name="password-input" minLength="4" maxLength="10"/>
+        </label>
+        <br/>
+        <!-- with predefined value & checked-->
+        <label for="checkbox-field">
+            <input type="checkbox" id="checkbox-field" name="checkbox-input" value="checked" checked/>
+            Checkbox input
+        </label>
+        <br/>
+        <!-- with predefined value -->
+        <label for="radio-field-1">
+            <input type="radio" id="radio-field-1" name="radio-input" value="1"/>
+            Radio input 1
+        </label>
+        <label for="radio-field-2">
+            <input type="radio" id="radio-field-2" name="radio-input" value="2"/>
+            Radio input 2
+        </label>
+        <br/>
+        <!-- with min/max range -->
+        <label for="range-field">
+            Range input
+            <input type="range" id="range-field" name="range-input" min="0" max="100"/>
+        </label>
+        <br/>
+        <label for="number-field">
+            Number input
+            <input type="number" id="number-field" name="number-input"/>
+        </label>
+        <br/>
+        <!-- input value is required -->
+        <label for="date-field">
+            Date input
+            <input type="date" id="date-field" name="date-input" required/>
+        </label>
+        <br/>
+        <label for="file-field">
+            File input
+            <input type="file" id="file-field" name="file-input"/>
+        </label>
+        <br/>
+        <label for="color-field">
+            Color input
+            <input type="color" id="color-field" name="color-input"/>
+        </label>
+        <br/>
+        <label for="dropdown-field">
+            Dropdown input
+            <select id="dropdown-field" name="dropdown-input">
+                <option value="0" selected>Choose a number</option>
+                <option value="1">Number 1</option>
+                <option value="2">Number 2</option>
+                <option value="3">Number 3</option>
+            </select>
+        </label>
+        <br />
+        <button type="submit">Versturen</button>
+        <br/>
+        <button type="reset" disabled>Reset</button>
+    </form>
+</div>
+<hr />
+
+</body>
+</html>

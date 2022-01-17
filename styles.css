@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap');
+
+@font-face {
+    font-family: 'Moret';
+    src: url('./assets/fonts/Moret Bold.otf') format('truetype');
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Moret", sans-serif;
+    font-size: 46px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.gap {
+    display: flex;
+    gap: 10px;
+}
+
+.display {
+    border: 1px solid black;
+    width: 1000px;
+}
+
+.relative-parent {
+    position: relative;
+}

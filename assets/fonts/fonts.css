@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Moret';
+    src: url('../../assets/fonts/Moret Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moret';
+    src: url('../../assets/fonts/Moret Bold Oblique.otf') format('otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Moret';
+    src: url('../../assets/fonts/Moret Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moret';
+    src: url('../../assets/fonts/Moret Regular Oblique.otf') format('otf');
+    font-weight: normal;
+    font-style: italic;
+}

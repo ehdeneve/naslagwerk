@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles.css">
+    <!--Onderstaande link verwijst naar de stylesheet voor deze les-->
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML & CSS - Les 2</title>
+</head>
+<body>
+<h1 id="top">CSS - Les 2</h1>
+<hr/>
+
+<!-------------------------------- 2.1 Type selector: ------------------------------->
+<section>
+    <h2>2.1 Type selector:</h2>
+    <article>
+        <h3>Dit is een titel (heading 3) met een custom CSS selector</h3>
+        <p>Omdat we de stijl toepassen op het type element,
+            wordt de styling toegepast worden op alle elementen op de pagina (van dat type)</p>
+    </article>
+</section>
+<hr/>
+
+<!-------------------------------- 2.2 Class selector: ------------------------------>
+<section>
+    <h2>2.2 Class selector:</h2>
+
+    <article class="highlighted-article">
+        <h3>Heading 3 heeft nog steeds dezelfde stijl</h3>
+        <p>Door het toevoegen van het class attribuut krijgt dit artikel een gele achtergrondkleur</p>
+    </article>
+
+    <article class="highlighted article">
+        <h3>Twee classen op 1 element</h3>
+        <p>Door het toevoegen van twee class attributen krijgt dit artikel een gele achtergrondkleur uit de class
+            'highlighted' en de rode tekst door de class 'article'</p>
+    </article>
+</section>
+<hr/>
+
+<!-------------------------------- 2.3 ID selector: --------------------------------->
+<section>
+    <h2>2.3 ID selector:</h2>
+    <article id="article-4">
+        <h3>Heading 3 heeft nog steeds dezelfde stijl</h3>
+        <p>Door een ID selector toe te wijzen, kunnen we rechtstreeks het ID attribuut uit het element aanspreken. Aangezien elk element max. 1 ID kan hebben is dit de meest specifieke vorm van styling.</p>
+    </article>
+</section>
+<hr/>
+
+<!-------------------------------- 2.4 Naar ID linken: ------------------------------>
+<section>
+    <h2>2.4 Naar ID linken:</h2>
+    <p>Je kunt een ID gebruiken om direct naar een specifiek gedeelte te linken. </p>
+    <ul>
+        <li><a href="#chapter-1">Hoofdstuk 1</a></li>
+        <li><a href="#chapter-2">Hoofdstuk 2</a></li>
+        <li><a href="#chapter-3">Hoofdstuk 3</a></li>
+        <li><a href="#chapter-3">Hoofdstuk 4</a></li>
+    </ul>
+    <p>Omdat de ID nu direct op het element is toegepast, wordt de type selector op h3 overschreven en is de kleur van
+        de
+        headers hierna wit</p>
+
+    <h3 id="chapter-1">Hoofdstuk 1 (H3 type selector wordt vanaf nu overschreven)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur at consectetur corporis debitis
+        dignissimos doloremque dolores earum enim esse et excepturi explicabo facere facilis fuga illo ipsum iste magnam
+        minima nam neque nesciunt nisi nostrum, obcaecati optio qui quia quo repellat sapiente sit tempora tempore
+        tenetur totam vel voluptatem voluptatibus, voluptatum! At ducimus exercitationem ipsam mollitia neque nobis
+        officia
+        omnis, provident, quo reprehenderit rerum sed voluptatibus! Aliquid aspernatur commodi distinctio ea facere
+        magni
+        maxime, minus, molestiae molestias nisi officia perspiciatis quae quasi reprehenderit sequi sit sunt tenetur
+        totam ut
+        voluptas! Ab, blanditiis illum magni maiores quas qui quos sunt!</p>
+
+    <h3 id="chapter-2">Hoofdstuk 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam at commodi deserunt dicta eaque
+        exercitationem expedita id illo illum in iure iusto natus nulla odio possimus, sequi similique, sint tempore
+        temporibus veniam veritatis voluptatem. Alias aliquid atque cum cupiditate dignissimos dolorem eligendi ex
+        exercitationem facilis fugiat impedit incidunt iste iusto, laborum minus molestiae molestias perferendis
+        perspiciatis quis recusandae reprehenderit sequi sint, suscipit temporibus ullam vero voluptas! A ab alias
+        aliquam aut expedita facere fugiat illum impedit labore libero magni maiores neque nobis, obcaecati officia
+        quasi
+        quibusdam quidem rerum sapiente tempore veritatis vero voluptate. Delectus, odit, sequi. Accusantium,
+        laboriosam,
+        nesciunt?</p>
+
+    <h3 id="chapter-3">Hoofdstuk 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius exercitationem laboriosam natus nesciunt
+        obcaecati odio quaerat recusandae voluptas voluptates. At corporis cupiditate deserunt dolore est et, fuga id
+        illo ipsam iste nam porro quae, quaerat quia voluptatibus? A asperiores, consequuntur delectus dolore dolorem
+        eius
+        enim exercitationem fuga ipsum libero maiores minima minus modi molestias nulla obcaecati quasi qui quod ullam
+        vel.
+        Eos nemo rerum velit. Adipisci beatae eos illum labore minima, nulla rem repellendus sunt. Aliquam amet atque
+        blanditiis consectetur earum hic illo iste minus molestias nihil numquam odit omnis quaerat quidem
+        reprehenderit,
+        repudiandae similique sint suscipit veniam vitae?</p>
+
+    <h3 id="chapter-4">Hoofdstuk 4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius exercitationem laboriosam natus nesciunt
+        obcaecati odio quaerat recusandae voluptas voluptates. At corporis cupiditate deserunt dolore est et, fuga id
+        illo ipsam iste nam porro quae, quaerat quia voluptatibus? A asperiores, consequuntur delectus dolore dolorem
+        eius
+        enim exercitationem fuga ipsum libero maiores minima minus modi molestias nulla obcaecati quasi qui quod ullam
+        vel.
+        Eos nemo rerum velit. Adipisci beatae eos illum labore minima, nulla rem repellendus sunt. Aliquam amet atque
+        blanditiis consectetur earum hic illo iste minus molestias nihil numquam odit omnis quaerat quidem
+        reprehenderit,
+        repudiandae similique sint suscipit veniam vitae?</p>
+</section>
+<hr/>
+
+<!-------------------------------- 2.5 Overige selectors: --------------------------->
+<section>
+    <h2>2.5 Overige selectors:</h2>
+
+    <p>Child selector:</p>
+    <article>
+        <p>Een <em>element</em> dat een direct child is van een ander element</p>
+    </article>
+
+    <p>Descendant selector:</p>
+    <article>
+        <p>Een <strong><em>element</em></strong> dat zich in een ander element bevindt, ook al zitter er nog andere
+            elementen omheen</p>
+    </article>
+
+    <p>Adjacent sibling selector: (spreek het element aan aan na het + teken)</p>
+    <button>Button</button>
+    <button>Button met margin links</button>
+
+    <h4>General sibling selector:</h4>
+    <p>Deze paragraaf staat op hetzelfde niveau als de titel</p>
+    <div>
+        <p>Deze paragraaf staat niet op hetzelfde niveau als de titel</p>
+    </div>
+    <p>Deze paragraaf staat op hetzelfde niveau als de titel</p>
+</section>
+<hr/>
+
+<!-------------------------------- 2.6 Kleuren: ------------------------------------->
+<section>
+    <h2>2.6 Kleuren:</h2>
+    <p class="named-color">Named color</p>
+    <p class="hex-color">HEX color code</p>
+    <p class="rgb-color">RGB color code</p>
+    <p class="hsl-color">HSL color code</p>
+</section>
+<hr/>
+
+<!-------------------------------- 2.7 Teksteigenschappen: -------------------------->
+<section>
+    <h2>2.7 Teksteigenschappen:</h2>
+    <p>Same text no styling</p>
+    <p class="paragraph-with-style">Same text with styling</p>
+</section>
+<hr/>
+
+<!-------------------------------- 2.8 Pseudo-classes: ------------------------------>
+<section>
+    <h2>2.8 Pseudo-classes:</h2>
+    <ul>
+        <li><a href="#" class="link-not-visited">Not visited</a></li>
+        <li><a href="#" class="link-visited">Visited</a></li>
+        <li><a href="#" class="link-hover">Hover</a></li>
+    </ul>
+    <label for="input-focus">
+        <input type="text" id="input-focus" placeholder="Focus">
+    </label>
+    <button class="button-active">On click</button>
+</section>
+<hr/>
+
+<!-------------------------------- 2.9 Hiërarchie: ---------------------------------->
+<section>
+    <h2>2.9 Hiërarchie:</h2>
+    <aside>Algemeen</aside>
+    <aside class="specific">Specifieker</aside>
+    <aside class="specific" id="most-specific">Meest specifiek</aside>
+    <aside class="first second">Laatste class wint</aside>
+</section>
+<hr/>
+
+<!-------------------------------- 2.10 Overerving: --------------------------------->
+<section>
+    <h2>2.10 Overerving:</h2>
+    <div class="parent">
+        <span class="child">Overerf de eigenschappen van de parent</span>
+    </div>
+</section>
+<hr/>
+
+<!-------------------------------- 2.11 Padding en margin: -------------------------->
+<section>
+    <h2>2.11 Padding en margin:</h2>
+    <button class="button-padding">Button met padding</button>
+    <button class="button-padding-border">Button met padding en border</button>
+    <button class="button-padding-border-margin">Button met padding, border en margin</button>
+</section>
+<hr/>
+
+<!-------------------------------- 2.12 Borders: ------------------------------------>
+<section>
+    <h2>2.12 Borders:</h2>
+    <div class="gap">
+        <div class="solid">solid</div>
+        <div class="dotted">dotted</div>
+        <div class="dashed">dashed</div>
+        <div class="double">double</div>
+        <div class="groove">groove</div>
+        <div class="ridge">ridge</div>
+        <div class="inset">inset</div>
+        <div class="outset">outset</div>
+        <div class="rounded">rounded</div>
+    </div>
+</section>
+<hr/>
+
+<!-------------------------------- 2.13 Display: ------------------------------------>
+<section>
+    <h2>2.13 Display:</h2>
+    <div class="display">
+        <div class="inline">Ik ben een <b>block</b> element dat zich als <b>inline</b> gedraagt.</div>
+        <div class="inline">Ik ben een <b>block</b> element dat zich als <b>inline</b> gedraagt.</div>
+        <div class="inline">Ik ben een <b>block</b> element dat zich als <b>inline</b> gedraagt.</div>
+
+        <span class="block">Ik ben een <b>inline</b> element dat zich als <b>block</b> gedraagt. </span>
+        <span class="block">Ik ben een <b>inline</b> element dat zich als <b>block</b> gedraagt. </span>
+        <span class="block">Ik ben een <b>inline</b> element dat zich als <b>block</b> gedraagt. </span>
+
+        <div class="inline-block">Ik ben een <b>block</b> element dat zich als <b>inline-block</b> gedraagt.</div>
+        <span class="inline-block">Ik ben een <b>inline</b> element dat zich als <b>inline-block</b> gedraagt. </span>
+        <span class="inline-block">Ik ben een <b>inline</b> element dat zich als <b>inline-block</b> gedraagt. </span>
+        <div class="inline-block">Ik ben een <b>block</b> element dat zich als <b>inline-block</b> gedraagt.</div>
+    </div>
+</section>
+<hr/>
+
+<!-------------------------------- 2.14 Position-property: -------------------------->
+<section>
+    <h2>2.14 Position-property:</h2>
+    <p>Relative:</p>
+    <div class="relative"></div>
+    <p>Relative + z-index:</p>
+    <div class="container">
+        <div class="relative z-index"></div>
+    </div>
+    <p>Absolute:</p>
+    <div class="container-relative">
+        <div class="absolute"></div>
+    </div>
+    <p>Fixed: (rechtsonder op de pagina)</p>
+    <div class="fixed">2.14</div>
+
+    <p>Sticky: (rechtsboven op de pagina)</p>
+    <div class="sticky">2.14</div>
+
+    <!-- De witruimte hieronder is om het sticky effect zichtbaar te maken op deze pagina -->
+    <div class="space"></div>
+</section>
+
+</body>
+</html>

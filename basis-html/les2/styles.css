@@ -1,0 +1,261 @@
+/* 2.1 Type selector: */
+h3 {
+    color: red;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* 2.2 Class selector: */
+.highlighted-article {
+    background-color: yellow;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.article {
+    color: blue;
+}
+
+/* 2.3 ID selector: */
+#article-4 {
+    background-color: blue;
+    color: white;
+}
+
+/* 2.4 Naar ID linken: */
+#chapter-1, #chapter-2, #chapter-3, #chapter-4 {
+    background-color: red;
+    color: white;
+}
+
+/* 2.5 Overige selectors: */
+p > em {
+    color: orangered;
+}
+
+article strong {
+    color: green;
+}
+
+button + button {
+    margin-left: 20px;
+}
+
+h4 ~ p {
+    color: red;
+}
+
+
+/* 2.6 Kleuren: */
+.named-color {
+    background-color: deeppink;
+}
+
+.hex-color {
+    background-color: #FF1493;
+}
+
+.rgb-color {
+    background-color: rgb(255, 20, 147);
+}
+
+.hsl-color {
+    background-color: hsl(328, 100%, 54%)
+}
+
+/* 2.7 Teksteigenschappen: */
+.paragraph-with-style {
+    font-family: 'Moret', serif; /* Zie fonts map voor het toevoegen van custom fonts */
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+/* 2.8 Pseudo-classes: */
+.link-not-visited:link {
+    color: red;
+}
+
+.link-visited:visited {
+    color: red;
+}
+
+.link-hover:hover {
+    color: red;
+}
+
+#input-focus:focus {
+    background-color: red;
+}
+
+.button-active:active {
+    background-color: red;
+}
+
+/* 2.9 Hiërarchie: */
+aside {
+    color: red;
+}
+
+.specific {
+    color: blue;
+}
+
+#most-specific {
+    color: orange;
+}
+
+.first {
+    color: red;
+    font-weight: bold;
+}
+
+.second {
+    color: blue;
+}
+
+/* 2.10 Overerving: */
+.parent {
+    border: 1px solid black;
+}
+
+.child {
+    border: inherit;
+}
+
+/* 2.11 Padding en margin: */
+.button-padding {
+    padding: 0 20px;
+}
+
+.button-padding-border {
+    padding: 0 20px;
+    border: 2px solid black;
+}
+
+.button-padding-border-margin {
+    padding: 0 20px;
+    border: 2px solid black;
+    margin: 0 40px;
+}
+
+/* 2.12 Borders: */
+.solid {
+    border-style: solid;
+}
+
+.dotted {
+    border-style: dotted;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove ;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.rounded {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* 2.13 Display: */
+.inline {
+    display: inline;
+    background-color: red;
+}
+
+.block {
+    display: block;
+    background-color: orange;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: turquoise;
+}
+
+/* 2.14 Position-property: */
+.container {
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.container-relative {
+    position: relative;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    /*margin: 20px 0;*/
+}
+
+.relative {
+    position: relative;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: 20px;
+}
+
+.z-index {
+    z-index: -1;
+}
+
+.absolute {
+    position: absolute;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: 20px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    text-align: center;
+}
+
+.space {
+    height: 2000px;
+}
